@@ -1,0 +1,53 @@
+/* Variables */
+
+// Base color
+$blue:#324157;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #2BBA61;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #2BBA61;
+
+
+//新增公共变量
+//这些常量很常用
+$fz:16px; //常见文本
+$fz1:18px;//三级标题 h3
+$fz2:20px;//大标题 h2
+$fz3:24px;//超大标题 H1
+$family:'Microsoft YaHei';
+$light-purple:#843ac8;
+$light-blue:#166FFF;
+$c1:#222529;
+$c2:#51647C;
+$c3:#7E97B8;
+$bg:#ebf2fa;
+$bc:#D0E0F3;
+$disable:#C1CBD9;
+$bs:8px;
+$bsw:4px 2px 16px 0px rgba(95,157,231,0.48);
+$transition:all 0.25s ease;
+
+// Sidebar
+$sideBarWidth: 210px;
+$subMenuBg:#1f2d3d;
+$subMenuHover:#001528;
+$subMenuActiveText:#f4f4f5;
+$menuBg:#304156;
+$menuText:#bfcbd9;
+$menuActiveText:#166FFF; // Also see settings.sidebarTextTheme
+
+// Login page
+$lightGray: #eee;
+$darkGray:#889aa4;
+$loginBg: #0e0220;
+$loginCursorColor: #fff;
+
+// The :export directive is the magic sauce for webpack
+// https://mattferderer.com/use-sass-variables-in-typescript-and-javascript
+:export {
+  menuBg: $menuBg;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+}

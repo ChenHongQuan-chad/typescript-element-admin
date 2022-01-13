@@ -1,0 +1,18 @@
+.full-mode .el-menu-item:hover,
+.el-menu-item.is-active{
+    position: relative;
+    &::after{
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: $light-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: $transition;
+    }
+}
+.full-mode .el-menu-item.is-active,
+.full-mode .el-menu-item:hover{
+    background-color: $subMenuHover !important;
+}

@@ -1,0 +1,25 @@
+/* Element Variables */
+
+//这里的常量很常用
+$--color-primary: #166FFF;
+$--color-success: #2BBA61;
+$--color-warning: #FFBF00;
+$--color-danger: #FF5248;
+$--color-info: #51647C;
+$--button-font-weight: 400;
+$--color-text-regular: #222529;
+$--border-color-light: #51647C;
+$--border-color-lighter: #7E97B8;
+$--table-border: 1px solid#D0E0F3;
+
+// Icon font path, required
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+// Apply overrided variables in Element UI
+@import '~element-ui/packages/theme-chalk/src/index';
+
+// The :export directive is the magic sauce for webpack
+// https://mattferderer.com/use-sass-variables-in-typescript-and-javascript
+:export {
+  theme: $--color-primary;
+}
